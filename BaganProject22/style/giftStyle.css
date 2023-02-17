@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  /* overflow: hidden; */
+}
+.heading {
+  position: relative;
+  /* display: flex;
+    justify-content: center; */
+  margin: 0 auto;
+  /* align-items: center; */
+  /* width: 90%; */
+  min-height: 100vh;
+  background: url(../img/giift/images/puppets/background.jpg),
+    url(../img/giift/background.jpeg);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-style: italic;
+  color: aquamarine;
+  font-size: 3rem;
+}
+
+.middle-heading {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-style: italic;
+  color: lightgreen;
+  font-size: 5rem;
+  transform: translateY(-50%);
+}
+
+.about-text {
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.detail {
+  position: relative;
+}
+.detail__swiper {
+  width: 90%;
+  /* height: 100vh; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.detail__swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 350px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 10px;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.detail__swiper-slide .detail__img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  margin-right: 10px;
+  /* padding-left: 10px; */
+  /* paddiing-right: 10px; */
+  /* width: 100%; */
+}
+
+.thirdary__heading {
+  color: #333;
+  font-weight: 700;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.detail-text {
+  font-size: 1.25rem;
+  color: #333;
+  letter-spacing: 0.025rem;
+}
+
+.modal {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  top: 0;
+  left: 0;
+  /* opacity: 0.5; */
+  z-index: 1000;
+  top: -150%;
+  left: 0;
+  transition: all 0.5s linear;
+}
+
+.modal .swiper {
+  width: 50%;
+  height: 50%;
+}
+
+.modal .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  /* height: 100vh; */
+}
+
+.modal .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.drop_modal {
+  top: 0;
+}
+
+.souvenirs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 1.5rem;
+ 
+}
+
+.souvenirs_detail {
+  flex: 0 0 39rem;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+}
+
+.souvenirs__img {
+  width: 100%;
+}
+
+.location {
+  color: #333;
+  font-style: italic;
+}
+
+.location-detail {
+  font-size: 20px;
+  color: #333;
+  font-weight: 800;
+}
